@@ -28,11 +28,11 @@ The layout adapts the visual design of modern banking websites such as **CIMB** 
 - Affin Bank  
 - Alliance Bank  
 - AmBank  
-- CIMB Bank & CIMB Islamic  
+- CIMB Bank
 - Hong Leong Bank  
-- Maybank & Maybank Islamic  
+- Maybank
 - Public Bank  
-- RHB Bank & RHB Islamic  
+- RHB Bank
 - Bank Islam Malaysia Berhad
 
 ---
