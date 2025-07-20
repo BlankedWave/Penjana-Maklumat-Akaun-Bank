@@ -32,23 +32,7 @@ Ramai individu terutamanya pelajar, pekerja kontrak dan freelancer menghadapi ke
 - **Animasi moden** dan kesan peralihan
 - Eksport ke **PDF resolusi tinggi**
 - Sokongan untuk **semua bank utama di Malaysia**
-- Paparan tandatangan pemilik akaun (sebelum PDF dijana)
 - **Butang laporan pepijat & cadangan** terus ke GitHub
-- **Maklumat tidak disimpan**, hanya digunakan untuk jana penyata
-
----
-
-## 🏦 Senarai Bank yang Disokong
-
-- Affin Bank  
-- Alliance Bank  
-- AmBank  
-- CIMB Bank  
-- Hong Leong Bank  
-- Maybank  
-- Public Bank  
-- RHB Bank  
-- Bank Islam Malaysia Berhad  
 
 ---
 
@@ -56,7 +40,7 @@ Ramai individu terutamanya pelajar, pekerja kontrak dan freelancer menghadapi ke
 
 1. Pilih **bank anda** daripada senarai dropdown
 2. Masukkan **nombor akaun** dan **nama penuh**
-3. Klik butang **“Jana”**
+3. Klik butang **“Jana Maklumat Akaun Bank”**
 4. Semak penyata akaun yang dijana
 5. Klik **“Muat Turun PDF”** untuk simpan
 
@@ -78,13 +62,13 @@ Ramai individu terutamanya pelajar, pekerja kontrak dan freelancer menghadapi ke
 ## 🛠️ Lapor Pepijat / Cadangan
 
 Jika anda menemui pepijat, kekurangan atau ingin memberi cadangan penambahbaikan, sila laporkan di:
-👉 [https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues](https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues)
+ [https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues](https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues)
 
 ---
 
 ## 🛡️ Privasi
 
-🔐 **Maklumat pengguna tidak disimpan** dan hanya digunakan secara sementara untuk menjana paparan penyata akaun bank sahaja.
+🔐 **Maklumat pengguna tidak disimpan** dan hanya digunakan secara sementara untuk menjana paparan maklumat akaun bank sahaja.
 
 ---
 
