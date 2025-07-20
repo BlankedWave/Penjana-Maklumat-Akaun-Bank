@@ -1,4 +1,4 @@
-# 💼 Bank Account Statement Generator
+# 💼 Bank Account Information Generator
 
 ## 📝 Description
 
