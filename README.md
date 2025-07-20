@@ -1,67 +1,93 @@
-# 💼 Bank Account Information Generator
+# 💼 Penjana Maklumat Akaun Bank
 
-## 📝 Description
+## 📌 Penerangan
 
-This tool is designed to help users quickly generate a **clean, branded bank statement-like document** that contains only:
-- Full Name
-- Bank Name (selected from Malaysian banks)
-- Account Number
+Alat ini dibangunkan untuk membantu pengguna menjana **maklumat akaun bank dalam bentuk penyata ringkas yang kemas dan profesional**, lengkap dengan:
+- Nama Pemilik Akaun
+- Nama Bank (pilihan dari senarai bank di Malaysia)
+- Nombor Akaun
 
-The layout adapts the visual design of modern banking websites such as **CIMB** and **Bank Islam Mobile** for a professional look. The result is exportable in **high-quality PDF**, ready for printing or submission to employers.
-
----
-
-## 🚀 Features
-
-- Responsive design with **Tailwind CSS**
-- Dynamic bank selection with matching **logo & theme**
-- Centered, print-friendly layout
-- Modern animations & transitions (inspired by BIMB/CIMB UX)
-- Export to **PDF (HD)** with accurate layout
-- Supports **all major Malaysian banks**
-- Footer with branding and link
+Reka letak sistem ini diinspirasikan daripada antaramuka aplikasi bank sebenar seperti **CIMB Clicks** dan **Bank Islam Mobile**, supaya hasilnya kelihatan profesional dan sesuai digunakan untuk kegunaan rasmi seperti:
+- Lampiran permohonan kerja
+- Kegunaan pentadbiran
+- Borang tuntutan
+- Tujuan identifikasi akaun bank
 
 ---
 
-## 🏦 Supported Banks
+## 🎯 Tujuan Sistem Ini Dibangunkan
+
+Ramai individu terutamanya pelajar, pekerja kontrak dan freelancer menghadapi kesukaran menyediakan bukti pemilikan akaun bank yang ringkas dan boleh dipercayai. Sistem ini diwujudkan untuk:
+- Menjimatkan masa menyediakan dokumen sokongan
+- Memudahkan urusan permohonan rasmi
+- Mengelakkan keperluan membuka aplikasi bank semata-mata untuk ambil tangkap layar
+
+---
+
+## 🚀 Ciri-Ciri Utama
+
+- Reka bentuk responsif dengan **Tailwind CSS**
+- Pemilihan bank secara dinamik dengan **logo dan tema tersuai**
+- Paparan terpusat dan mesra cetakan
+- **Animasi moden** dan kesan peralihan
+- Eksport ke **PDF resolusi tinggi**
+- Sokongan untuk **semua bank utama di Malaysia**
+- Paparan tandatangan pemilik akaun (sebelum PDF dijana)
+- **Butang laporan pepijat & cadangan** terus ke GitHub
+- **Maklumat tidak disimpan**, hanya digunakan untuk jana penyata
+
+---
+
+## 🏦 Senarai Bank yang Disokong
 
 - Affin Bank  
 - Alliance Bank  
 - AmBank  
-- CIMB Bank
+- CIMB Bank  
 - Hong Leong Bank  
-- Maybank
+- Maybank  
 - Public Bank  
-- RHB Bank
-- Bank Islam Malaysia Berhad
+- RHB Bank  
+- Bank Islam Malaysia Berhad  
 
 ---
 
-## 🧪 How to Use
+## 🧪 Cara Menggunakan
 
-1. Select your **bank** from the dropdown
-2. Enter your **account number** and **full name**
-3. Click **“Generate”**
-4. Preview the statement
-5. Click **“Download PDF”** to save it
-
----
-
-## 🖥️ Technology Stack
-
-| Layer | Tech |
-|-------|------|
-| Frontend | HTML5 |
-| Styling | Tailwind CSS |
-| Interactivity | JavaScript |
-| Animations | CSS3 Transitions, JS Effects |
-| PDF Generation | `html2canvas` + `jsPDF` |
-| Hosting | GitHub Pages |
+1. Pilih **bank anda** daripada senarai dropdown
+2. Masukkan **nombor akaun** dan **nama penuh**
+3. Klik butang **“Jana”**
+4. Semak penyata akaun yang dijana
+5. Klik **“Muat Turun PDF”** untuk simpan
 
 ---
 
-## 📄 License
+## 🧑‍💻 Teknologi Digunakan
+
+| Lapisan | Teknologi |
+|--------|-----------|
+| Antaramuka Hadapan | HTML5 |
+| Gaya & Susun Atur | Tailwind CSS |
+| Interaktiviti | JavaScript |
+| Animasi | CSS3 Transitions, JavaScript |
+| Penjanaan PDF | `html2canvas` + `jsPDF` |
+| Pengehosan | GitHub Pages |
+
+---
+
+## 🛠️ Lapor Pepijat / Cadangan
+
+Jika anda menemui pepijat, kekurangan atau ingin memberi cadangan penambahbaikan, sila laporkan di:
+👉 [https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues](https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues)
+
+---
+
+## 🛡️ Privasi
+
+🔐 **Maklumat pengguna tidak disimpan** dan hanya digunakan secara sementara untuk menjana paparan penyata akaun bank sahaja.
+
+---
+
+## 📄 Lesen
 
 MIT License © 2025 [Blankedwave](https://github.com/BlankedWave)
-
----
