@@ -60,18 +60,18 @@
         <option value="Maybank">Maybank</option>
         <option value="Public Bank">Public Bank</option>
         <option value="RHB Bank">RHB Bank</option>
-        <option value="Bank Islam Malaysia">Bank Islam</option>
+        <option value="Bank Islam">Bank Islam</option>
         <option value="Bank Simpanan Nasional (BSN)">Bank Simpanan Nasional (BSN)</option>
         <option value="Bank Rakyat">Bank Rakyat</option>
-        <option value="Bank Muamalat Malaysia">Bank Muamalat</option>
-        <option value="CitiBank Malaysia">CitiBank</option>
-        <option value="HSBC Bank Malaysia">HSBC Bank</option>
-        <option value="Standard Chartered Bank Malaysia">Standard Chartered Bank</option>
-        <option value="OCBC Bank Malaysia">OCBC Bank</option>
-        <option value="UOB Malaysia">UOB</option>
+        <option value="Bank Muamalat">Bank Muamalat</option>
+        <option value="CitiBank">CitiBank</option>
+        <option value="HSBC Bank">HSBC Bank</option>
+        <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+        <option value="OCBC Bank">OCBC Bank</option>
+        <option value="UOB">UOB</option>
         <option value="Agrobank">Agrobank</option>
         <option value="Al-Rajhi Bank">Al-Rajhi Bank</option>
-        <option value="MBSB Bank Berhad">MBSB Bank</option>
+        <option value="MBSB Bank">MBSB Bank</option>
         <option value="Co-op Bank Pertama">Co-op Bank Pertama</option>
         
       </select>
@@ -113,23 +113,39 @@
       "Maybank": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Maybank_logo.svg/690px-Maybank_logo.svg.png?20190308015824",
       "Public Bank": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyeFXbofRPxRmci_e4xZXKRhwmkC3CbHWhcg&s",
       "RHB Bank": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/RHB_Logo.svg/1200px-RHB_Logo.svg.png",
-      "Bank Islam Malaysia": "https://upload.wikimedia.org/wikipedia/commons/3/32/BANK_ISLAM_LOGO.jpg",
+      "Bank Islam": "https://upload.wikimedia.org/wikipedia/commons/3/32/BANK_ISLAM_LOGO.jpg",
       "Bank Simpanan Nasional (BSN)": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiByMaT-MoSqiVcpv9UggoNpD-uuwSfjMcQ&s",
       "Bank Rakyat": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpFspw65Gt7X8MxV_XGAEkYsNVo3D8BSnL7A7QVVL3NJBJxD63h_fQCeLsGISPmhLv7pdniZV98LjSkSX4bJZihEYWjW4ZtrQcNf5W9c-YEs1nvYPbBiThVf3duPmfP_CRzT6upV4nCk9J/s1600/Bank+Rakyat+01.png",
-      "Bank Muamalat Malaysia": "https://cdn.freelogovectors.net/wp-content/uploads/2022/03/bank_muamalat_logo_freelogovectors.net_.png",
-      "CitiBank Malaysia": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Citibank.svg/2560px-Citibank.svg.png",
-      "HSBC Bank Malaysia": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/2560px-HSBC_logo_%282018%29.svg.png",
-      "Standard Chartered Bank Malaysia": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Standard_Chartered_%282021%29.svg",
-      "OCBC Bank Malaysia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdiKYDON2nlSulm48IwTTkZK1xW-TipoJh9g&s",
-      "UOB Malaysia": "https://upload.wikimedia.org/wikipedia/commons/e/e0/UOB_Logo_%282022%29.svg",
+      "Bank Muamalat": "https://cdn.freelogovectors.net/wp-content/uploads/2022/03/bank_muamalat_logo_freelogovectors.net_.png",
+      "CitiBank": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Citibank.svg/2560px-Citibank.svg.png",
+      "HSBC Bank": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/2560px-HSBC_logo_%282018%29.svg.png",
+      "Standard Chartered Bank": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Standard_Chartered_%282021%29.svg",
+      "OCBC Bank": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdiKYDON2nlSulm48IwTTkZK1xW-TipoJh9g&s",
+      "UOB": "https://upload.wikimedia.org/wikipedia/commons/e/e0/UOB_Logo_%282022%29.svg",
       "Agrobank": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Agrobank_Malaysia_Logo.svg/1200px-Agrobank_Malaysia_Logo.svg.png",
       "Al-Rajhi Bank": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Al_Rajhi_Bank_Logo.svg/1200px-Al_Rajhi_Bank_Logo.svg.png",
-      "MBSB Bank": "Bank Logo/MBSB.png",
+      "MBSB Bank": "https://www.mywakaf.com.my/wp-content/uploads/2023/06/MBSB-Bank-Logo.png",
       "Co-op Bank Pertama": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Co-opbank_Pertama.png",
     
 
     };
+ 
+//fucntion sort ikut alphabet
+window.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById("bank");
 
+    // Ambil semua <option> kecuali placeholder pertama
+    const options = Array.from(select.options).slice(1);
+
+    // Susun option berdasarkan text A–Z
+    options.sort((a, b) => a.text.localeCompare(b.text));
+
+    // Buang semua option kecuali placeholder
+    select.length = 1;
+
+    // Tambah semula option yang telah disusun
+    options.forEach(option => select.add(option));
+  });
     
     function generateStatement() {
       const bank = document.getElementById('bank').value;
