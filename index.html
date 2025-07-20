@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Penjana Maklumat Bank</title>
+  <title>Penjana Maklumat Akaun Bank</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -40,15 +40,18 @@
 
 <body class="min-h-screen bg-gray-50 text-gray-800 flex items-center justify-center">
   <main class="w-full max-w-md p-6 bg-white rounded-xl shadow-md">
-    <h1 class="text-2xl font-semibold mb-4 text-center">🏦</h1>
+    <div class="flex justify-center mb-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/9334/9334539.png" alt="Gambar Kad" class="w-12 h-12">
+    </div>
+
 
 
   <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-2xl transition transform hover:scale-[1.01] fade-in">
-    <h1 class="text-2xl font-bold text-center mb-4 text-red-700">Penjana Maklumat Bank</h1>
+    <h1 class="text-2xl font-bold text-center mb-4 text-red-700">Penjana Maklumat Akaun Bank</h1>
     <div class="space-y-4">
       <select id="bank"
         class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500">
-        <option value="">Pilih Bank</option>
+        <option value="" disabled selected hidden>Pilih Bank</option>
         <option value="Affin Bank">Affin Bank</option>
         <option value="Alliance Bank">Alliance Bank</option>
         <option value="AmBank">AmBank</option>
@@ -59,12 +62,19 @@
         <option value="RHB Bank">RHB Bank</option>
         <option value="Bank Islam">Bank Islam Malaysia</option>
       </select>
-      <input type="text" id="nama" placeholder="Nama Pemilik Akaun"
-        class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500" />
-      <input type="text" id="nombor" placeholder="Nombor Akaun"
-        class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500" />
+      <!-- NAMA - hanya huruf dan simbol tertentu -->
+<input type="text" id="nama" placeholder="Nama Pemilik Akaun"
+  class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500"
+  oninput="this.value = this.value.replace(/[^a-zA-Z\s.'-]/g, '')"
+/>
+      <!-- NOMBOR AKAUN - hanya nombor -->
+<input type="text" id="nombor" placeholder="Nombor Akaun"
+  class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500"
+  inputmode="numeric" pattern="\d*" maxlength="20"
+  oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+/>
       <button onclick="generateStatement()"
-        class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">Jana Maklumat Bank</button>
+        class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">Jana Maklumat Akaun Bank</button>
     </div>
 
     <div id="output-section" class="mt-6 hidden fade-in">
@@ -76,7 +86,7 @@
         <p class="text-md text-gray-600" id="bank-output"></p>
       </div>
       <button onclick="downloadPDF()"
-        class="w-full mt-4 bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Muat Turun PDF</button>
+        class="w-full mt-4 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">Muat Turun PDF</button>
     </div>
   </div>
 
@@ -141,6 +151,16 @@
   </p>
 </div>
     
+<!-- Butang Lapor Pepijat -->
+<div class="mt-4 text-center fade-in">
+  <a href="https://github.com/BlankedWave/Penjana-Maklumat-Akaun-Bank/issues" target="_blank"
+    class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-600 text-white text-sm rounded-lg shadow hover:bg-cyan-700 transition">
+    🐞 Laporkan Pepijat / Cadangan
+  </a>
+</div>
+
+
+
 <!-- Footer -->    
 <footer class="mt-10 text-center w-full text-sm text-gray-500 dark:text-gray-400 py-4 border-t border-gray-300">
   &copy; 2025 
