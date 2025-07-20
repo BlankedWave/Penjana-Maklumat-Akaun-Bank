@@ -60,7 +60,20 @@
         <option value="Maybank">Maybank</option>
         <option value="Public Bank">Public Bank</option>
         <option value="RHB Bank">RHB Bank</option>
-        <option value="Bank Islam">Bank Islam Malaysia</option>
+        <option value="Bank Islam Malaysia">Bank Islam Malaysia</option>
+        <option value="Bank Simpanan Nasional (BSN)">Bank Simpanan Nasional (BSN)</option>
+        <option value="Bank Rakyat">Bank Rakyat</option>
+        <option value="Bank Muamalat Malaysia">Bank Muamalat Malaysia</option>
+        <option value="CitiBank Malaysia">CitiBank Malaysia</option>
+        <option value="HSBC Bank Malaysia">HSBC Bank Malaysia</option>
+        <option value="Standard Chartered Bank Malaysia">Standard Chartered Bank Malaysia</option>
+        <option value="OCBC Bank Malaysia">OCBC Bank Malaysia</option>
+        <option value="UOB Malaysia">UOB Malaysia</option>
+        <option value="Agrobank">Agrobank</option>
+        <option value="Al-Rajhi Bank">Al-Rajhi Bank</option>
+        <option value="MBSB Bank Berhad">MBSB Bank Berhad</option>
+        <option value="Co-op Bank Pertama">Co-op Bank Pertama</option>
+        
       </select>
       <!-- NAMA - hanya huruf dan simbol tertentu -->
 <input type="text" id="nama" placeholder="Nama Pemilik Akaun"
@@ -95,14 +108,37 @@
       "Affin Bank": "https://upload.wikimedia.org/wikipedia/commons/6/63/AFFIN_BANK_Logo_Full_Colour.png",
       "Alliance Bank": "https://images.squarespace-cdn.com/content/v1/58f6e275db29d62262560fbf/1499930253308-KX0VA1U4YTEIK8EFNHYO/image-asset.jpeg",
       "AmBank": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/AmBank_group.svg/2560px-AmBank_group.svg.png",
-      "CIMB Bank": "https://wp.logos-download.com/wp-content/uploads/2016/06/CIMB_Bank1-700x151.png",
+      "CIMB Bank": "Bank Logo/CIMB.jpg",
       "Hong Leong Bank": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Hong_Leong_Bank.svg/2560px-Hong_Leong_Bank.svg.png",
       "Maybank": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Maybank_logo.svg/690px-Maybank_logo.svg.png?20190308015824",
       "Public Bank": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyeFXbofRPxRmci_e4xZXKRhwmkC3CbHWhcg&s",
       "RHB Bank": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/RHB_Logo.svg/1200px-RHB_Logo.svg.png",
       "Bank Islam": "https://upload.wikimedia.org/wikipedia/commons/3/32/BANK_ISLAM_LOGO.jpg",
+      "Bank Simpanan Nasional (BSN)": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiByMaT-MoSqiVcpv9UggoNpD-uuwSfjMcQ&s",
+      "Bank Rakyat": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpFspw65Gt7X8MxV_XGAEkYsNVo3D8BSnL7A7QVVL3NJBJxD63h_fQCeLsGISPmhLv7pdniZV98LjSkSX4bJZihEYWjW4ZtrQcNf5W9c-YEs1nvYPbBiThVf3duPmfP_CRzT6upV4nCk9J/s1600/Bank+Rakyat+01.png",
+      "Bank Muamalat Malaysia": "https://cdn.freelogovectors.net/wp-content/uploads/2022/03/bank_muamalat_logo_freelogovectors.net_.png",
+      "CitiBank Malaysia": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Citibank.svg/2560px-Citibank.svg.png",
+      "HSBC Bank Malaysia": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/2560px-HSBC_logo_%282018%29.svg.png",
+      "Standard Chartered Bank Malaysia": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Standard_Chartered_%282021%29.svg",
+      "OCBC Bank Malaysia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdiKYDON2nlSulm48IwTTkZK1xW-TipoJh9g&s",
+      "UOB Malaysia": "https://upload.wikimedia.org/wikipedia/commons/e/e0/UOB_Logo_%282022%29.svg",
+      "Agrobank": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Agrobank_Malaysia_Logo.svg/1200px-Agrobank_Malaysia_Logo.svg.png",
+      "Al-Rajhi Bank": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Al_Rajhi_Bank_Logo.svg/1200px-Al_Rajhi_Bank_Logo.svg.png",
+      "MBSB Bank": "https://www.mbsb.com.my/images/img/Logo-MBSB-RGB-FC.png",
+      "Co-op Bank Pertama": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Co-opbank_Pertama.png",
+    
+
     };
 
+
+
+        // <option value="OCBC Bank Malaysia">OCBC Bank Malaysia</option>
+        // <option value="UOB Malaysia">UOB Malaysia</option>
+        // <option value="Agrobank">Agrobank</option>
+        // <option value="Al-Rajhi Bank">Al-Rajhi Bank</option>
+        // <option value="MBSB Bank Berhad">MBSB Bank Berhad</option>
+        // <option value="Co-op Bank Pertama">Co-op Bank Pertama</option>
+    
     function generateStatement() {
       const bank = document.getElementById('bank').value;
       const nama = document.getElementById('nama').value;
@@ -140,7 +176,7 @@
       const y = (pageHeight - imgHeight) / 2;
 
       pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
-      pdf.save("Penyata Akaun Bank.pdf");
+      pdf.save("Maklumat Akaun Bank.pdf");
     }
   </script>
 
