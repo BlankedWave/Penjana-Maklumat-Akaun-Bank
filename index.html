@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Penyata Akaun Bank</title>
+  <title>Penjana Maklumat Bank</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -44,7 +44,7 @@
 
 
   <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-2xl transition transform hover:scale-[1.01] fade-in">
-    <h1 class="text-2xl font-bold text-center mb-4 text-red-700">Penjana Penyata Bank</h1>
+    <h1 class="text-2xl font-bold text-center mb-4 text-red-700">Penjana Maklumat Bank</h1>
     <div class="space-y-4">
       <select id="bank"
         class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500">
@@ -64,7 +64,7 @@
       <input type="text" id="nombor" placeholder="Nombor Akaun"
         class="w-full border px-3 py-2 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500" />
       <button onclick="generateStatement()"
-        class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">Jana Penyata</button>
+        class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">Jana Maklumat Bank</button>
     </div>
 
     <div id="output-section" class="mt-6 hidden fade-in">
@@ -137,7 +137,7 @@
 <!-- Makluman pengguna -->
 <div class="mt-6 text-center text-sm text-gray-600 px-4">
   <p class="bg-yellow-100 border border-yellow-300 text-yellow-800 rounded-md py-3 px-5 inline-block shadow-sm">
-    Maklumat pengguna <strong>tidak disimpan</strong> dan hanya digunakan untuk menjana penyata akaun bank semata-mata.
+    Maklumat pengguna <strong>tidak disimpan</strong> dan hanya digunakan untuk menjana maklumat bank semata-mata.
   </p>
 </div>
     
